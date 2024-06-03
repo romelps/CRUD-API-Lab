@@ -36,6 +36,7 @@ router.delete('/:groceryId', async (req, res) => {
     }
 
 }
+)
 
 //update route
 router.put('/:groceryId', async (req, res) => {
@@ -56,7 +57,7 @@ router.put('/:groceryId', async (req, res) => {
             res.status(500).json(err);
         }
     }
-}
+});
 
 //show
 router.get('/:groceryId', async (req, res) => {
@@ -67,6 +68,6 @@ router.get('/:groceryId', async (req, res) => {
     catch (err) {
         res.status(500).json(err);
     }
-}
+});
 
 module.exports = router;
